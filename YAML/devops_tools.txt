@@ -1,0 +1,3 @@
+-datree to validate yml files
+-monokle by kubeshop
+-lens (a gui for yml )

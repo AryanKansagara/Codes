@@ -1,0 +1,88 @@
+student:
+ -marks
+ -name
+ -roll_no
+ -subject
+
+# like this also
+cities: [mumbai,rajkot]
+
+#some of the keys of the seq will be empty 
+#sparse seq
+
+sparse seq:
+ -hey
+ -how 
+ -
+ -NULL
+ -sup
+
+#nested sequence
+-
+ -mango 
+ -apple
+ -banana 
+-
+ -marks
+ -roll_no
+
+#Key:value pairs are called maps
+!!map
+
+#nested mappings: map within a map 
+name: Aryan Kansagara
+role:
+  age: 28
+  job: student
+
+#same as
+name: Aryan Kansagara
+role: {age: 28, job: student}
+
+# pairs: keys may have duplicate values
+# !!pairs
+
+pair example: !!pairs
+ -job: student
+ -job: teacher
+#this will be an array of hashtables
+
+#same as 
+pair example: !!pairs [job: student , job: teacher]
+
+#!!set will allow you to have unique values
+names: !!set
+ ?Aryan
+ ?Priyank
+ ?Daksh
+
+#dictionary  !!omap
+People: !!omap
+ - Aryan: 
+    - name: Aryan Kansagara
+    - age: 23
+    - height: 1212
+ - Name: 
+    - name: Rahul OP
+    - age: 234
+    - height: 23234
+
+#reusing some properties using anchors
+likings: &likes
+  fav fruit: orange
+  dislikes: apple
+
+person1: 
+  name: Aryan Kansagara
+  <<: *likes #accessing the property 
+
+person2:
+  name: Priyank
+  <<: *likes
+  dislikes: berries #dislikes overwritten by berries 
+
+person3: 
+  name: Daksh
+  <<: *likes
+  fav fruit: mango
+  

@@ -1,0 +1,17 @@
+"apple":"I am a red fruit"
+1:"this is my roll number"
+
+#lists
+
+-apple
+-mango
+-banana
+-Apple 
+
+# yaml is case sensitive -> apple and Apple are different
+
+cities:
+ -new delhi
+ -rajkot
+ -mumbai
+ 

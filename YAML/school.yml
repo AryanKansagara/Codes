@@ -1,0 +1,10 @@
+---
+School:
+- name: Dps
+  principal: Someone
+  Students:
+  - rno: 12
+    name: Aryan Kansagara
+    marks: 34
+
+

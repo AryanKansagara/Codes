@@ -1,0 +1,28 @@
+ML is a subset of AI
+
+AI: the efforts to automate the intellectual tasks performed by humans
+
+Machine Learning takes the data and takes the output and then figures out the rules for us
+
+Goal for Machine Learning Models : Highest accuracy possible
+
+Machine Learning summary: Rather than giving the program the rules an algorithm finds the rules itself
+
+-----------------------------------
+
+AI<-ML<-NN(nueral network)
+
+Neural Network: A form of machine learning that uses a layered representation of data 
+
+------------------------------------
+
+Feature => The information used by us to predict something
+Label=> Something we are looking to predict or you can say the output
+
+---------------------------------------
+
+Different types of Machine Learning:
+-Unsupervised Learning
+-Supervised Learning
+-Reinforcement Learning
+

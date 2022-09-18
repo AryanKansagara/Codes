@@ -1,0 +1,47 @@
+#String variables and its representation 
+myself: Aryan Kansagara
+fruit: "mango"
+job: 'dev'
+
+# multiline strings
+bio: |
+hello there i am aryan .
+and life's been great.
+
+#write single line in multiline
+message: >
+this 
+is a 
+message
+
+#same as
+message: this is a message
+
+number: 123
+marks: 12.12
+booleanValue: No #n,N,false,False
+#same for true ->yes,y,Y 
+
+
+#specify the type 
+# syntax=> variable_name: !!datatype value
+zero: !!int 0
+positiveNum: !!int 23
+negative num: !!int -23
+commaValue: !!int + 540_000 #540,000
+exponents: 6.023E56
+
+
+#floating point numbers 
+marks: !float 12.43
+infinite: !!float .inf
+not a num: .nan
+
+#boolean
+ans: !!bool No
+
+#null
+sur: !!null Null # or null NULL ~
+~: this is a null key
+
+#date and time -> google and search 
